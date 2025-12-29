@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fantasy-dark: #1a1a1a;
+  --color-fantasy-gold: #d4af37;
+  --color-fantasy-bronze: #cd7f32;
+  --color-fantasy-forest: #2d5016;
+  --color-fantasy-parchment: #f4e4bc;
+
+  --font-family-fantasy: "Cinzel", serif;
+  --font-family-body: "Crimson Text", serif;
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(
+    circle at center,
+    rgb(127 29 29) 0%,
+    rgba(127, 29, 29, 0.5) 50%,
+    rgb(0 0 0) 100%
+  );
+}
