@@ -3,6 +3,7 @@
 
 <template>
   <div>
+    <AnimatedBackground />
     <NuxtRouteAnnouncer />
     <Header />
     <NuxtPage />

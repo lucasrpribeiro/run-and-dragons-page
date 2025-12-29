@@ -6,9 +6,7 @@ const campaigns = ref<TCampaing[]>(campaings as TCampaing[])
 </script>
 
 <template>
-  <div class="min-h-screen bg-black relative overflow-hidden">
-    <div class="absolute inset-0 bg-radial-gradient from-red-950 via-red-950/50 to-black"/>
-    
+  <div class="min-h-screen relative overflow-hidden">
     <div class="container mx-auto px-4 pt-48 pb-12 relative z-10">
 
 
