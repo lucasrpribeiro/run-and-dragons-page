@@ -32,7 +32,7 @@ const isActive = (path: string) => {
         </div>
 
         <div class="h-6 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
-        <div class="flex items-center justify-between gap-4 w-full">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 w-full">
           <img :src="logoImage" width="100" height="100" alt="Run & Dragons Logo" class="w-28" />
 
           <ul class="flex items-center gap-4">
