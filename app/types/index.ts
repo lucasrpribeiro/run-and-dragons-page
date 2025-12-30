@@ -12,3 +12,13 @@ export interface TCampaing {
   status: CampaignStatus
   image?: string
 }
+
+export type CampaignContent = {
+  title: string
+  description: string
+  players: number
+  status: string
+  image?: string
+  _path: string
+  body: any
+}

@@ -8,23 +8,22 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
 
   modules: [
-    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxt/test-utils'
+    '@nuxt/test-utils',
   ],
 
   fonts: {
     families: [
       { name: 'Cinzel', provider: 'google', weights: ['400', '600', '700'] },
-      { name: 'Crimson Text', provider: 'google', weights: ['400', '600'] }
-    ]
-  }
+      { name: 'Crimson Text', provider: 'google', weights: ['400', '600'] },
+    ],
+  },
 })

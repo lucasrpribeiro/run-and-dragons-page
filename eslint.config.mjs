@@ -17,7 +17,7 @@ export default withNuxt(
     },
     {
       rules: {
-        'no-undef': 'error',
+        'no-undef': 'off',
         'node/prefer-global/process': 'off',
         'ts/no-require-imports': 'off',
         'vue/multi-word-component-names': 'off',

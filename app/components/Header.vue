@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import logoImage from '~/assets/images/logo.png'
+import logoImage from '~/assets/images/logo-text.png'
 
 const route = useRoute()
 const navItems = [
@@ -8,7 +8,7 @@ const navItems = [
   { name: 'Campanhas', path: '/campanhas' }
 ]
 
-const isActive = (path: string) => {
+function isActive(path: string) {
   return route.path === path
 }
 </script>
@@ -32,8 +32,8 @@ const isActive = (path: string) => {
         </div>
 
         <div class="h-6 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
-        <div class="flex flex-col md:flex-row items-center justify-between gap-4 w-full">
-          <img :src="logoImage" width="100" height="100" alt="Run & Dragons Logo" class="w-28" />
+        <div class="flex flex-col items-center justify-between gap-4 w-full">
+          <img :src="logoImage" width="100" height="100" alt="Run & Dragons Logo" class="w-32" draggable="false"/>
 
           <ul class="flex items-center gap-4">
 

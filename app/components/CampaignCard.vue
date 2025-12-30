@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { TCampaing } from '~/types'
 import { getCampaignStatusText } from '~/utils/campaign-status'
+import { getCampaignSlug } from '~/utils/campaign-slug'
 
 const props = defineProps({
   campaign: {
@@ -8,11 +9,14 @@ const props = defineProps({
     required: true,
   },
 })
+
+const campaignSlug = computed(() => getCampaignSlug(props.campaign.title))
 </script>
 
 <template>
-  <div
-    class="group relative w-full max-w-2xl bg-black backdrop-blur-xl border border-white/20 rounded-xl p-10 py-14 hover:bg-white/15 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 cursor-pointer overflow-hidden"
+  <NuxtLink
+    :to="`/campanha/${campaignSlug}`"
+    class="group relative w-full max-w-2xl bg-black backdrop-blur-xl border border-white/20 rounded-xl p-10 py-14 hover:bg-white/15 hover:border-purple-500/40 hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-300 cursor-pointer overflow-hidden block"
   >
     <div
       v-if="campaign.image"
@@ -43,5 +47,5 @@ const props = defineProps({
         </div>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
