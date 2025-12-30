@@ -30,7 +30,6 @@ const navItems = [
         </div>
 
         <div class="hidden md:block h-6 w-px bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-
         <div class="flex flex-col items-center justify-center gap-2 md:gap-4 w-full">
           <img :src="logoImage" width="100" height="100" alt="Run & Dragons Logo" class="w-20 md:w-32" draggable="false">
 

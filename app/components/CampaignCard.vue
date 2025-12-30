@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type { PropType } from 'vue'
 import type { TCampaing } from '~/types'
 import { getCampaignStatusText } from '~/utils/campaign-status'
 import { getCampaignSlug } from '~/utils/campaign-slug'
