@@ -70,67 +70,99 @@ const counterClockwiseSpheres = [
 }
 
 .orbit-cw-1 {
-  animation: orbit-cw-1 25s linear infinite, pulse 4s ease-in-out infinite;
+  animation:
+    orbit-cw-1 25s linear infinite,
+    pulse 4s ease-in-out infinite;
 }
 
 .orbit-cw-2 {
-  animation: orbit-cw-2 30s linear infinite, pulse 4.5s ease-in-out infinite;
+  animation:
+    orbit-cw-2 30s linear infinite,
+    pulse 4.5s ease-in-out infinite;
 }
 
 .orbit-cw-3 {
-  animation: orbit-cw-3 35s linear infinite, pulse 3.5s ease-in-out infinite;
+  animation:
+    orbit-cw-3 35s linear infinite,
+    pulse 3.5s ease-in-out infinite;
 }
 
 .orbit-cw-4 {
-  animation: orbit-cw-4 28s linear infinite, pulse 5s ease-in-out infinite;
+  animation:
+    orbit-cw-4 28s linear infinite,
+    pulse 5s ease-in-out infinite;
 }
 
 .orbit-cw-5 {
-  animation: orbit-cw-5 32s linear infinite, pulse 4.2s ease-in-out infinite;
+  animation:
+    orbit-cw-5 32s linear infinite,
+    pulse 4.2s ease-in-out infinite;
 }
 
 .orbit-cw-6 {
-  animation: orbit-cw-6 36s linear infinite, pulse 4.3s ease-in-out infinite;
+  animation:
+    orbit-cw-6 36s linear infinite,
+    pulse 4.3s ease-in-out infinite;
 }
 
 .orbit-cw-7 {
-  animation: orbit-cw-7 38s linear infinite, pulse 3.7s ease-in-out infinite;
+  animation:
+    orbit-cw-7 38s linear infinite,
+    pulse 3.7s ease-in-out infinite;
 }
 
 .orbit-cw-8 {
-  animation: orbit-cw-8 34s linear infinite, pulse 4.6s ease-in-out infinite;
+  animation:
+    orbit-cw-8 34s linear infinite,
+    pulse 4.6s ease-in-out infinite;
 }
 
 .orbit-ccw-1 {
-  animation: orbit-ccw-1 27s linear infinite, pulse 3.8s ease-in-out infinite;
+  animation:
+    orbit-ccw-1 27s linear infinite,
+    pulse 3.8s ease-in-out infinite;
 }
 
 .orbit-ccw-2 {
-  animation: orbit-ccw-2 33s linear infinite, pulse 4.7s ease-in-out infinite;
+  animation:
+    orbit-ccw-2 33s linear infinite,
+    pulse 4.7s ease-in-out infinite;
 }
 
 .orbit-ccw-3 {
-  animation: orbit-ccw-3 29s linear infinite, pulse 3.2s ease-in-out infinite;
+  animation:
+    orbit-ccw-3 29s linear infinite,
+    pulse 3.2s ease-in-out infinite;
 }
 
 .orbit-ccw-4 {
-  animation: orbit-ccw-4 31s linear infinite, pulse 4.8s ease-in-out infinite;
+  animation:
+    orbit-ccw-4 31s linear infinite,
+    pulse 4.8s ease-in-out infinite;
 }
 
 .orbit-ccw-5 {
-  animation: orbit-ccw-5 26s linear infinite, pulse 3.9s ease-in-out infinite;
+  animation:
+    orbit-ccw-5 26s linear infinite,
+    pulse 3.9s ease-in-out infinite;
 }
 
 .orbit-ccw-6 {
-  animation: orbit-ccw-6 37s linear infinite, pulse 4.1s ease-in-out infinite;
+  animation:
+    orbit-ccw-6 37s linear infinite,
+    pulse 4.1s ease-in-out infinite;
 }
 
 .orbit-ccw-7 {
-  animation: orbit-ccw-7 39s linear infinite, pulse 3.6s ease-in-out infinite;
+  animation:
+    orbit-ccw-7 39s linear infinite,
+    pulse 3.6s ease-in-out infinite;
 }
 
 .orbit-ccw-8 {
-  animation: orbit-ccw-8 35s linear infinite, pulse 4.4s ease-in-out infinite;
+  animation:
+    orbit-ccw-8 35s linear infinite,
+    pulse 4.4s ease-in-out infinite;
 }
 
 @keyframes spin-container {
@@ -143,7 +175,8 @@ const counterClockwiseSpheres = [
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.25;
     filter: brightness(0.8) blur(64px);
   }
@@ -178,7 +211,8 @@ const counterClockwiseSpheres = [
 }
 
 @keyframes flame-flicker {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -198,10 +232,22 @@ const counterClockwiseSpheres = [
 
 @keyframes particles-drift {
   0% {
-    background-position: 0% 0%, 100% 100%, 50% 50%, 80% 20%, 90% 60%, 30% 80%;
+    background-position:
+      0% 0%,
+      100% 100%,
+      50% 50%,
+      80% 20%,
+      90% 60%,
+      30% 80%;
   }
   100% {
-    background-position: 100% 100%, 0% 0%, 50% 50%, 20% 80%, 10% 40%, 70% 20%;
+    background-position:
+      100% 100%,
+      0% 0%,
+      50% 50%,
+      20% 80%,
+      10% 40%,
+      70% 20%;
   }
 }
 

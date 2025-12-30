@@ -7,6 +7,7 @@ export enum CampaignStatus {
 export interface TCampaing {
   id: number
   title: string
+  slug: string
   description: string
   players: number
   status: CampaignStatus

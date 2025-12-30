@@ -2,10 +2,12 @@
 </script>
 
 <template>
-  <div>
+  <div class="container mx-auto">
     <AnimatedBackground />
     <NuxtRouteAnnouncer />
     <Header />
-    <NuxtPage />
+    <div class="mt-16">
+      <NuxtPage />
+    </div>
   </div>
 </template>
